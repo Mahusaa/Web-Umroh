@@ -1,6 +1,5 @@
 "use client"
 
-"use client"
 
 import { useState } from "react"
 import type { FormEvent } from "react"
@@ -8,7 +7,6 @@ import { Button } from "~/components/ui/button"
 import { Form1 } from "~/components/form/Form1"
 import { Form2 } from "~/components/form/Form2"
 import { Form3 } from "~/components/form/Form3"
-import { Label } from "@radix-ui/react-select"
 
 const TOTAL_STEPS = 5;
 
@@ -37,9 +35,8 @@ export default function Component() {
       case 3:
         return <Form3 />
       case 4:
-        return <Label>Description Page (yet)</Label>
       case 5:
-        return <Label>Preview and Download page (yet)</Label>
+        return <div>Not Yet</div>
       default:
         return null
     }
